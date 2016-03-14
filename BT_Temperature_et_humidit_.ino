@@ -15,18 +15,18 @@ void setup()
 }
 void loop()
 {
-    //while(HC06.available())
-    //{
+    while(HC06.available())
+    {
       
-  int chk = DHT11.read(DHT11PIN); // Lecture du capteur
+  int chk = DHT11.read(DHT11PIN); 
 
-  HC06.print("Humidite (%): "); // Humidité
+  HC06.print("Humidite (%): "); 
   HC06.println((float)DHT11.humidity, 2);
 
-  HC06.print("Temperature (°C): "); // Température
+  HC06.print("Temperature (°C): ");
   HC06.println((float)DHT11.temperature, 2);
 
-  delay(1000); // Pause avant prochaine lecture
+  delay(1000); 
     //}
 }
 
