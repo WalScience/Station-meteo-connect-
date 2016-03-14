@@ -27,6 +27,6 @@ void loop()
   HC06.println((float)DHT11.temperature, 2);
 
   delay(1000); 
-    //}
+    }
 }
 
